@@ -1,0 +1,83 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main(){
+	double a,b,c;
+	char e;
+	string d;
+			
+		do{
+		
+		cout<<"Kalkulator Sederhana"<<endl;
+      cout<<endl;
+      cout<<"=========================\n";
+			cout<<"Silahkan Pilih Operasinya : \n";
+			cout<<"\n1. Penjumlahan\n2. Pengurangan\n3. Pembagian\n4.  Perkalian\n5. Modulus\n6. Perpangkatan\n";
+			cout<<"Masukan Pilihan Anda : ";cin>>e;
+			switch(e){
+				case '1':
+					cout<<"===========================================================\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= a + b;
+						cout<<"Hasil Penjumlahan Adalah\n";
+						cout<<a<<" + "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";
+						break;
+				case '2' :
+				    cout<<"===========================================================\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= a - b;
+						cout<<"Hasil Pengurangan Adalah\n";
+						cout<<a<<" - "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";		
+						break;
+				case '3' :
+					cout<<"===========================================================\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= a / b;
+						cout<<"Hasil Perkalian Adalah\n";
+						cout<<a<<" / "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";		
+						break;
+				case '4':
+					cout<<"===========================================================\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= a * b;
+						cout<<"Hasil Pembagian Adalah\n";
+						cout<<a<<" * "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";		
+						break;
+				case '5' :
+					cout<<"===========================================================-\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= (int)a %(int) b;
+						cout<<"Hasil modulus Adalah\n";
+						cout<<a<<" % "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";		
+						break;
+				case '6':
+					cout<<"===========================================================\n";
+						cout<<"Masukan Angka Pertama : ";cin>>a;
+						cout<<"Masukan Angka Kedua : "; cin>>b;
+						c= pow(a,b);
+						cout<<"Hasil Perpangkatan Adalah\n";
+						cout<<a<<" ^ "<<b<<" = "<<c<<endl;
+					cout<<"=============================================================\n";		
+						break;
+				default :
+					break;
+			
+				}
+				cout<<"Apakah Anda Ingin Melanjutkan oprasi ? (YA/TIDAK)\n Pilih Salah Satu :";cin>>d;
+			}while(d=="YA");
+			cout<<"Terima Kasih Atas Waktunya Teman\n";
+			cout<<"Gak, Sama - sama Teman ";
+		
+	
+	
+  }
